@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25365D261E18CC36003CB9C2 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25365D251E18CC36003CB9C2 /* RatingControl.swift */; };
 		253743111E16EB78001B1F6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253743101E16EB78001B1F6A /* AppDelegate.swift */; };
 		253743131E16EB78001B1F6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253743121E16EB78001B1F6A /* ViewController.swift */; };
 		253743161E16EB78001B1F6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253743141E16EB78001B1F6A /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25365D251E18CC36003CB9C2 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RatingControl.swift; path = ../RatingControl.swift; sourceTree = "<group>"; };
 		2537430D1E16EB78001B1F6A /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		253743101E16EB78001B1F6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		253743121E16EB78001B1F6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				253743101E16EB78001B1F6A /* AppDelegate.swift */,
 				253743121E16EB78001B1F6A /* ViewController.swift */,
+				25365D251E18CC36003CB9C2 /* RatingControl.swift */,
 				253743141E16EB78001B1F6A /* Main.storyboard */,
 				253743171E16EB79001B1F6A /* Assets.xcassets */,
 				253743191E16EB79001B1F6A /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				253743131E16EB78001B1F6A /* ViewController.swift in Sources */,
+				25365D261E18CC36003CB9C2 /* RatingControl.swift in Sources */,
 				253743111E16EB78001B1F6A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +303,7 @@
 				253743211E16EB79001B1F6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
