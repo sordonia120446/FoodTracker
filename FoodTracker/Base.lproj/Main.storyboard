@@ -57,8 +57,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ff-8s-LT7" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                <frame key="frameInset" minX="87" minY="77" width="200" height="110"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2ff-8s-LT7" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                <frame key="frameInset" minX="62" minY="77" width="251" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
                         </subviews>
