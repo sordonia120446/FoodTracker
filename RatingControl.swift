@@ -93,7 +93,7 @@ import UIKit
                                       compatibleWith: self.traitCollection)
         
         // Create the star buttons & add them to stack + ratingButtons[]
-        for _ in 0..<starCount {
+        for index in 0..<starCount {
             
             // Create a button
             let button = UIButton()
@@ -116,6 +116,9 @@ import UIKit
             button.translatesAutoresizingMaskIntoConstraints = false
             button.heightAnchor.constraint(equalToConstant: starSize.height).isActive = true
             button.widthAnchor.constraint(equalToConstant: starSize.width).isActive = true
+            
+            // Set accessibility label
+            button.accessibilityLabel = "Set \(index+1) star rating"
             
             /* Setup button action
              
@@ -141,6 +144,30 @@ import UIKit
         for (index, button) in ratingButtons.enumerated() {
             // Fill in all stars less than the current one
             button.isSelected = index < rating
+            
+            let hintString: String?
+            if rating == index + 1 {
+                hintString = "Tap to reset the rating to zero"
+            } else {
+                hintString = nil
+            }
+            
+            // Calculate the value string.  Note that each case's value = rating
+            let valueString: String
+            switch (rating) {
+            case 0:
+                valueString = "No rating set"
+            case 1:
+                valueString = "1 star set"
+            default:
+                valueString = "\(rating) stars set"
+            } // end switch-case 
+            
+            // Assign the hint & value strings
+            button.accessibilityHint = hintString
+            button.accessibilityValue = valueString
+            
+            
         }
     } // end updateButtonSelectionStates
 
