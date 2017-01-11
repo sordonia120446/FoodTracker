@@ -17,9 +17,15 @@ class Meal {
     
     //MARK: Init
     init?(name: String, photo: UIImage?, rating: Int) {
-        if name.isEmpty || rating < 0 {
+        
+        guard !name.isEmpty else {
             return nil
         }
+        
+        guard (rating >= 0) && (rating < 6) else {
+            return nil
+        }
+        
         self.name = name
         self.photo = photo
         self.rating = rating
